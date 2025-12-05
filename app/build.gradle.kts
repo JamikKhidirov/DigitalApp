@@ -67,16 +67,16 @@ dependencies {
 
 
     // --- Firebase ---
-    implementation(platform("com.google.firebase:firebase-bom:32.7.0")) // Проверьте актуальную версию
-    implementation("com.google.firebase:firebase-firestore")
+    implementation(platform("com.google.firebase:firebase-bom:34.6.0")) // Проверьте актуальную версию
+    implementation("com.google.firebase:firebase-firestore:26.0.2")
 
     // --- Hilt (Dependency Injection) ---
-    implementation("com.google.dagger:hilt-android:2.50")
-    kapt("com.google.dagger:hilt-android-compiler:2.50")
+    implementation("com.google.dagger:hilt-android:2.57.2")
+    kapt("com.google.dagger:hilt-android-compiler:2.57.2")
 
     // Hilt для Compose (ViewModel)
-    implementation("androidx.hilt:hilt-navigation-compose:1.2.0")
-    kapt("androidx.hilt:hilt-compiler:1.2.0")
+    implementation("androidx.hilt:hilt-navigation-compose:1.3.0")
+    kapt("androidx.hilt:hilt-compiler:1.3.0")
 
     implementation(project(":data"))
     implementation(project(":domain"))

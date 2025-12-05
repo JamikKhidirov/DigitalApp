@@ -10,5 +10,5 @@ plugins {
     id("com.google.gms.google-services") version "4.4.4" apply false // Проверьте актуальную версию
 
     // Плагин Dagger Hilt
-    id("com.google.dagger.hilt.android") version "2.52" apply false // Проверьте актуальную версию
+    id("com.google.dagger.hilt.android") version "2.50" apply false // Проверьте актуальную версию
 }
