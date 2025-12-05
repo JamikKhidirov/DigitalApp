@@ -4,8 +4,6 @@ plugins {
 
     kotlin("kapt")
     id("com.google.dagger.hilt.android")
-    // Добавление плагина Firebase
-    id("com.google.gms.google-services")
 }
 
 android {
@@ -49,6 +47,10 @@ dependencies {
     // --- Firebase ---
     implementation(platform("com.google.firebase:firebase-bom:34.6.0")) // Проверьте актуальную версию
     implementation("com.google.firebase:firebase-firestore")
+
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.10.2") // Актуальная версия
+// Если вам нужны диспетчеры Android (например, Dispatchers.IO):
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.10.2")
 
     // --- Hilt (Dependency Injection) ---
     implementation("com.google.dagger:hilt-android:2.57.2")
