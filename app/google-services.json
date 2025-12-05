@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "703765295458",
+    "project_id": "digitalapp-cbda4",
+    "storage_bucket": "digitalapp-cbda4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:703765295458:android:7d852f3059c75d5cf17c3b",
+        "android_client_info": {
+          "package_name": "com.example.digitalapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAw58lLDEWmhj54wMjEzHA0zoNXxS7lCec"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

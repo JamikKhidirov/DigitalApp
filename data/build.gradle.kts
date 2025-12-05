@@ -53,4 +53,6 @@ dependencies {
     // --- Hilt (Dependency Injection) ---
     implementation("com.google.dagger:hilt-android:2.57.2")
     kapt("com.google.dagger:hilt-android-compiler:2.57.2")
+
+    implementation(project(":domain"))
 }
