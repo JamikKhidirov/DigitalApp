@@ -19,7 +19,6 @@ import com.example.digitalapp.viewmodels.ComplaintViewModel
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun ComplaintScreen(
-    // Получаем ViewModel с помощью hiltViewModel()
     viewModel: ComplaintViewModel = hiltViewModel()
 ) {
     val state by viewModel.uiState.collectAsState()

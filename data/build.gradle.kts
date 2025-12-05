@@ -3,7 +3,8 @@ plugins {
     alias(libs.plugins.kotlin.android)
 
     kotlin("kapt")
-    id("com.google.dagger.hilt.android")
+    id("com.google.dagger.hilt.android") version "2.57.2"
+
 }
 
 android {
@@ -44,7 +45,7 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
-    // --- Firebase ---
+    // --- Firebas
     implementation(platform("com.google.firebase:firebase-bom:34.6.0")) // Проверьте актуальную версию
     implementation("com.google.firebase:firebase-firestore")
 
@@ -52,9 +53,9 @@ dependencies {
 // Если вам нужны диспетчеры Android (например, Dispatchers.IO):
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.10.2")
 
-    // --- Hilt (Dependency Injection) ---
     implementation("com.google.dagger:hilt-android:2.57.2")
-    kapt("com.google.dagger:hilt-android-compiler:2.57.2")
+    kapt("com.google.dagger:hilt-compiler:2.57.2")
+
 
     implementation(project(":domain"))
 }

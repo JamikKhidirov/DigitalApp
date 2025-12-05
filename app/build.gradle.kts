@@ -5,7 +5,7 @@ plugins {
 
     kotlin("kapt")
 
-    id("com.google.dagger.hilt.android")
+    id("com.google.dagger.hilt.android") version "2.57.2"
 
     // Добавление плагина Firebase
     id("com.google.gms.google-services")
@@ -45,7 +45,11 @@ android {
     buildFeatures {
         compose = true
     }
+
 }
+
+
+
 
 dependencies {
 
@@ -64,20 +68,18 @@ dependencies {
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
-
+    implementation("androidx.compose.material:material-icons-core:1.7.8")
 
     // --- Firebase ---
     implementation(platform("com.google.firebase:firebase-bom:34.6.0")) // Проверьте актуальную версию
     implementation("com.google.firebase:firebase-firestore:26.0.2")
 
-    // --- Hilt (Dependency Injection) ---
     implementation("com.google.dagger:hilt-android:2.57.2")
-    kapt("com.google.dagger:hilt-android-compiler:2.57.2")
+    kapt("com.google.dagger:hilt-compiler:2.57.2")
+
 
     // Hilt для Compose (ViewModel)
     implementation("androidx.hilt:hilt-navigation-compose:1.3.0")
-    kapt("androidx.hilt:hilt-compiler:1.3.0")
-
     implementation(project(":data"))
     implementation(project(":domain"))
 }
