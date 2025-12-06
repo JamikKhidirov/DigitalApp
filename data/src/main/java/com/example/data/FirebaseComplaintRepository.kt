@@ -25,7 +25,6 @@ class FirebaseComplaintRepository @Inject constructor(
         }
 
         catch (e: Exception){
-            // В продакшене лучше использовать кастомные исключения
             throw IllegalStateException("Ошибка при отправке в Firebase: ${e.message}")
         }
     }

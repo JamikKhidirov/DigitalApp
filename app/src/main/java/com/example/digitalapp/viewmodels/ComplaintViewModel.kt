@@ -17,7 +17,6 @@ class ComplaintViewModel @Inject constructor(
     private val submitComplaintUseCase: SubmitComplaintUseCase // Hilt внедрит
 ): ViewModel() {
 
-
     private val _uiState = MutableStateFlow(ComplaintUiState())
     val uiState: StateFlow<ComplaintUiState> = _uiState
 
@@ -28,8 +27,6 @@ class ComplaintViewModel @Inject constructor(
     fun updateDescription(newDescription: String) {
         _uiState.update { it.copy(description = newDescription, error = null) }
     }
-
-
 
     fun submitComplaint() {
         if (_uiState.value.isSubmitting) return

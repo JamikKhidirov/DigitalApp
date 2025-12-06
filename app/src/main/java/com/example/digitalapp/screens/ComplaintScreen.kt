@@ -33,7 +33,7 @@ fun ComplaintScreen(
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("ПромСвязь: Жалоба Администрации") },
+                title = { Text("DigitalApp: Жалоба Администрации") },
                 colors = TopAppBarDefaults.topAppBarColors(
                     containerColor = MaterialTheme.colorScheme.primaryContainer
                 )
